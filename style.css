@@ -29,7 +29,7 @@
   #calculator-container {
       width: 50%;
       min-height: 100vh;
-      border-radius: 12px;
+      border-radius: 12px 0px 0px 12px;
       background: linear-gradient(32deg, #f441a5,#1bcab3);
       display: flex;
       flex-direction: column;
@@ -51,8 +51,8 @@
       margin-top: 20px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-row-gap: 5px;
-      grid-column-gap: 10px;
+      grid-row-gap: 12px;
+      grid-column-gap: 18px;
   }
 
   .ext-btns {
@@ -114,6 +114,7 @@
   #image {
       width: 50%;
       min-height: 100vh;
+      border-radius: 0px 12px 12px 0px;
       background: linear-gradient(32deg,#03a9f4,#ffeb3b);
       background-size: 200%;
   }
@@ -125,5 +126,6 @@
 
       #calculator-container {
           width: 100%;
+          border-radius: 12px;
       }
   }
