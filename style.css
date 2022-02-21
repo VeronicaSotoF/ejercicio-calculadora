@@ -16,7 +16,7 @@
   }
 
   input {
-    width: 130px;
+    width: 140px;
     height: 40px;
     padding: 12px 20px;
     margin: 0 2px;
@@ -29,7 +29,8 @@
   #calculator-container {
       width: 50%;
       min-height: 100vh;
-      background: linear-gradient(32deg, #f441a5,#ffeb3b);
+      border-radius: 12px;
+      background: linear-gradient(32deg, #f441a5,#1bcab3);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -37,7 +38,7 @@
   }
 
   #result {
-      min-width: 250px;
+      min-width: 270px;
       height: 60px;
       border: 2px solid #ffeb3b;
       margin: 20px 0;
@@ -49,12 +50,12 @@
   #button-container {
       margin-top: 20px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-row-gap: 5px;
       grid-column-gap: 10px;
   }
 
-  button {
+  .ext-btns {
     text-decoration: none;
     border: none;
     font-size: 16px;
@@ -70,7 +71,7 @@
     z-index: 1;
    }
    
-   button:hover {
+   .ext-btns:hover {
     animation: ani 8s linear infinite;
     border: none;
    }
@@ -86,12 +87,28 @@
    }
    
    
-   button:hover::before {
+   .ext-btns:hover::before {
     filter: blur(20px);
    }
    
-   button:active {
+   .ext-btns:active {
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   }
+
+   #seven-btn, #eight-btn, #nine-btn, #four-btn, #five-btn, #six-btn, #one-btn, #two-btn, #three-btn, #zero-btn, #dot-btn, #delete-btn {
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+    width: 4em;
+    height: 4em;
+    line-height: 2em;
+    text-align: center;
+    background:#03a9f4;
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
    }
 
   #image {
